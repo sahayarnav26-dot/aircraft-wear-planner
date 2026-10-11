@@ -9,8 +9,8 @@ Theme: AI for Resilient and Sustainable Supply Chains · Round 2 submission
 
 | | |
 | --- | --- |
-| Live prototype | _add your Streamlit Community Cloud URL_ |
-| Demo video | _add your unlisted YouTube URL_ |
+
+
 | Code | this repository |
 
 ![Fleet overview](docs/images/01_fleet_overview.png)
