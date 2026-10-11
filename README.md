@@ -10,7 +10,7 @@ Theme: AI for Resilient and Sustainable Supply Chains · Round 2 submission
 | | |
 | --- | --- |
 
-
+| Live Prototype URL | https://aircraft-wear-planner-hazf9ezmfmgncbjkdemhhv.streamlit.app/ |
 | Code | this repository |
 
 ![Fleet overview](docs/images/01_fleet_overview.png)
