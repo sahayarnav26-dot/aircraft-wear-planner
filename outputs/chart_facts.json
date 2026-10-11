@@ -1,0 +1,33 @@
+{
+  "primary": "lstm",
+  "demo_engine": {
+    "engine": "FD001-R-074",
+    "plan_alert_cycle": 130,
+    "plan_alert_flights_left": 36.0,
+    "review_alert_cycle": 153,
+    "review_alert_flights_left": 13.0,
+    "end_of_life_cycle": 166
+  },
+  "sensors": {
+    "shared_top3": [
+      "s11",
+      "s4"
+    ],
+    "top3": {
+      "lstm": [
+        "s11",
+        "s13",
+        "s14",
+        "s4",
+        "s8"
+      ],
+      "lgbm": [
+        "s11",
+        "s15",
+        "s3",
+        "s4",
+        "s9"
+      ]
+    }
+  }
+}

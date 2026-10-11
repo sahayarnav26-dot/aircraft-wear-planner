@@ -1,0 +1,101 @@
+{
+  "model_version": "lgbm-cvband-v1",
+  "model_name": "LightGBM gradient-boosted trees on rolling sensor features",
+  "explainer": "TreeSHAP",
+  "dataset": "NASA C-MAPSS FD001 (simulated engine data)",
+  "split": "80 engines for fitting and 5-fold calibration; 20 held-out replay engines; 100 official test engines",
+  "label_cap_cycles": 125,
+  "band": "80% band: 10th-90th percentile of engine-wise cross-validated errors, per predicted-RUL range",
+  "test_last_cycle": {
+    "n_engines": 100,
+    "rmse_vs_capped_true": 18.36,
+    "rmse_vs_uncapped_true": 19.26,
+    "nasa_score_vs_capped_true": 1297.9,
+    "nasa_score_vs_uncapped_true": 1329.8,
+    "band_coverage_vs_capped_true": 0.86,
+    "mean_band_width_cycles": 44.6
+  },
+  "replay_engines_all_cycles": {
+    "n_engines": 20,
+    "n_rows": 3661,
+    "rmse_vs_capped_true": 17.66,
+    "band_coverage_vs_capped_true": 0.824,
+    "mean_band_width_cycles": 46.1,
+    "coverage_by_range": {
+      "0-15": {
+        "n": 310,
+        "coverage": 0.777
+      },
+      "15-30": {
+        "n": 263,
+        "coverage": 0.84
+      },
+      "30-50": {
+        "n": 354,
+        "coverage": 0.853
+      },
+      "50-75": {
+        "n": 416,
+        "coverage": 0.88
+      },
+      "75-100": {
+        "n": 603,
+        "coverage": 0.881
+      },
+      "100+": {
+        "n": 1715,
+        "coverage": 0.79
+      }
+    }
+  },
+  "cross_validation": {
+    "folds": 5,
+    "oof_rmse_vs_capped_true": 19.12,
+    "fold_best_iterations": [
+      236,
+      212,
+      202,
+      170,
+      312
+    ],
+    "final_rounds": 226
+  },
+  "sensor_importance": {
+    "s2": 0.0766,
+    "s3": 0.0866,
+    "s4": 0.1973,
+    "s7": 0.0256,
+    "s8": 0.0266,
+    "s9": 0.1335,
+    "s11": 0.1155,
+    "s12": 0.0302,
+    "s13": 0.0288,
+    "s14": 0.0678,
+    "s15": 0.1074,
+    "s17": 0.0322,
+    "s20": 0.0245,
+    "s21": 0.0474
+  },
+  "replay_units": [
+    8,
+    9,
+    13,
+    18,
+    37,
+    46,
+    48,
+    50,
+    55,
+    62,
+    64,
+    69,
+    72,
+    74,
+    76,
+    84,
+    85,
+    87,
+    90,
+    95
+  ]
+}

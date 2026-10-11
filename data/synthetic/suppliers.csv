@@ -1,0 +1,11 @@
+supplier_id,supplier_name,part_id,origin_location,lead_time_days_standard,lead_time_days_expedited,unit_price_usd,expedite_fee_usd,standard_mode,distance_km
+SUP-01,Fowler Aero Components,P-HPC-BLD,Bengaluru (IN),7,2,249600,14976,road,1750
+SUP-02,Johnson Turbine Spares,P-HPC-BLD,Singapore (SG),24,3,230400,23040,sea,4150
+SUP-03,Hill Aero Components,P-HPC-VNE,Bengaluru (IN),7,2,156000,9360,road,1750
+SUP-04,Walker Turbine Spares,P-HPC-VNE,Singapore (SG),24,3,144000,14400,sea,4150
+SUP-05,Doyle Aero Components,P-HPC-SEL,Bengaluru (IN),7,2,18720,1123,road,1750
+SUP-06,Rhodes Turbine Spares,P-HPC-SEL,Singapore (SG),24,3,17280,1728,sea,4150
+SUP-07,Mcclain Aero Components,P-FAN-BLD,Bengaluru (IN),10,3,504000,30240,road,1750
+SUP-08,Miller Turbine Spares,P-FAN-BLD,Hamburg (DE),35,4,456000,45600,sea,6100
+SUP-09,Henderson Aero Components,P-FAN-ACL,Bengaluru (IN),10,3,63000,3780,road,1750
+SUP-10,Johnson Turbine Spares,P-FAN-ACL,Hamburg (DE),35,4,57000,5700,sea,6100

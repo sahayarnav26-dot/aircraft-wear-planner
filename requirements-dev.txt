@@ -1,0 +1,13 @@
+# Everything: dashboard + model training + charts + data generation + API + tests. Tested on Python 3.13.
+# PyTorch: on Linux, the CPU-only build is smaller:
+#   pip install torch==2.14.1 --index-url https://download.pytorch.org/whl/cpu
+-r requirements.txt
+torch==2.14.1
+lightgbm==4.7.0
+scikit-learn==1.9.1
+matplotlib==3.11.2
+Faker==40.43.0
+fastapi==0.143.0
+uvicorn==0.53.0
+httpx==0.28.1
+pytest==9.1.1

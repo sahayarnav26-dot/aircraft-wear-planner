@@ -1,0 +1,5 @@
+mode,kg_co2e_per_tonne_km,source_url,source_note
+road,0.105,https://measuringemissionsguide.environment.govt.nz/8_freight.html,"NZ Ministry for the Environment, Measuring Emissions Catalogue 2026, Table 8.11: long-haul heavy truck"
+air_short_haul,1.27835,https://measuringemissionsguide.environment.govt.nz/8_freight.html,"NZ Ministry for the Environment, Measuring Emissions Catalogue 2026, Table 8.18: freight flights, short haul, with radiative forcing (x1.7)"
+air_long_haul,0.89939,https://measuringemissionsguide.environment.govt.nz/8_freight.html,"NZ Ministry for the Environment, Measuring Emissions Catalogue 2026, Table 8.18: freight flights, long haul, with radiative forcing (x1.7)"
+sea,0.01612,https://measuringemissionsguide.environment.govt.nz/8_freight.html,"NZ Ministry for the Environment, Measuring Emissions Catalogue 2026, Table 8.20: container ship, average"

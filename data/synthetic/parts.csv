@@ -1,0 +1,6 @@
+part_id,part_name,component,unit_weight_kg,unit_cost_usd
+P-HPC-BLD,HPC blade set,HPC,60.0,240000
+P-HPC-VNE,HPC stator vane set,HPC,45.0,150000
+P-HPC-SEL,HPC seal kit,HPC,8.0,18000
+P-FAN-BLD,Fan blade set,FAN,150.0,480000
+P-FAN-ACL,Fan case acoustic liner,FAN,35.0,60000

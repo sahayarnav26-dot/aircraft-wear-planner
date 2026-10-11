@@ -1,0 +1,54 @@
+{
+  "method": "Per-RUL-range normalised conformal calibration of the MC-dropout spread on out-of-fold errors",
+  "quantiles": [
+    0.1,
+    0.9
+  ],
+  "spread_floor": 3.583065271718191,
+  "bins": [
+    {
+      "pred_from": 0,
+      "pred_to": 15,
+      "n": 1162,
+      "q_lo": -1.470506052929143,
+      "q_hi": 0.9610730588283098
+    },
+    {
+      "pred_from": 15,
+      "pred_to": 30,
+      "n": 1298,
+      "q_lo": -1.814284136759447,
+      "q_hi": 2.279443939119013
+    },
+    {
+      "pred_from": 30,
+      "pred_to": 50,
+      "n": 1469,
+      "q_lo": -2.1429674338202482,
+      "q_hi": 2.4607263763438048
+    },
+    {
+      "pred_from": 50,
+      "pred_to": 75,
+      "n": 1659,
+      "q_lo": -1.992390832376664,
+      "q_hi": 2.5687315757565274
+    },
+    {
+      "pred_from": 75,
+      "pred_to": 100,
+      "n": 2436,
+      "q_lo": -2.146479581115566,
+      "q_hi": 2.999818216971111
+    },
+    {
+      "pred_from": 100,
+      "pred_to": null,
+      "n": 6046,
+      "q_lo": -1.253606089415337,
+      "q_hi": 1.2177268989353958
+    }
+  ],
+  "model_version": "lstm-mc-v1",
+  "mc_passes": 25
+}

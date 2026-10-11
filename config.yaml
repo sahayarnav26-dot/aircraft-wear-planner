@@ -1,0 +1,20 @@
+# Illustrative demo settings. These thresholds are NOT airworthiness limits.
+timezone: Asia/Kolkata
+
+planning:
+  safety_buffer_cycles: 5        # cycles kept in hand before the lower edge of the RUL band
+  review_max_rul_lower: 10       # rul_lower <= 10 -> Review before next departure
+  plan_max_rul_lower: 40         # rul_lower <= 40 -> Plan maintenance; above -> Monitor
+  order_window_days: 7           # Monitor: flag when the recommended option must be ordered within this window
+  air_long_haul_km: 3700         # air legs longer than this use the long-haul emission factor
+  component_part:                # spare needed for each degradation mode
+    HPC: P-HPC-BLD
+    FAN: P-FAN-BLD
+  default_component: HPC         # FD001 has one fault mode: HPC degradation
+
+weights:
+  co2e_default: 0.5              # dashboard slider default: 0 = cost only, 1 = CO2e only
+
+simulation:
+  start: "2026-10-11T06:00:00+05:30"
+  turnaround_hours: 1.0          # ground time between a landing and the next departure

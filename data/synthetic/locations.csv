@@ -1,0 +1,8 @@
+location_id,name,type,lat,lon
+DEL,Delhi hub,hub,28.5562,77.1
+BOM,Mumbai line station,line station,19.0896,72.8656
+BLR,Bengaluru line station,line station,13.1986,77.7066
+HYD,Hyderabad line station,line station,17.2403,78.4294
+MAA,Chennai line station,line station,12.9941,80.1709
+CCU,Kolkata line station,line station,22.6547,88.4467
+NAG,Nagpur central warehouse,warehouse,21.0922,79.0472

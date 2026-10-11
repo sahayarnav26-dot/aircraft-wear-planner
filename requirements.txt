@@ -1,0 +1,7 @@
+# Runtime for the dashboard (what Streamlit Community Cloud installs). Tested on Python 3.13.
+streamlit==1.65.0
+pandas==3.0.5
+numpy==2.5.3
+plotly==7.1.0
+pulp[highs]==4.0.0
+PyYAML==6.0.3

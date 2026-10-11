@@ -1,0 +1,181 @@
+{
+  "model_version": "lstm-mc-v1",
+  "model_name": "LSTM sequence model (2 x 64 units), 5-fold ensemble",
+  "explainer": "occlusion sensitivity",
+  "dataset": "NASA C-MAPSS FD001 (simulated engine data)",
+  "split": "80 engines for 5-fold training and calibration; 20 held-out replay engines; 100 official test engines",
+  "label_cap_cycles": 125,
+  "band": "80% band: Monte Carlo dropout spread calibrated with per-RUL-range conformal prediction on out-of-fold errors",
+  "test_last_cycle": {
+    "n_engines": 100,
+    "rmse_vs_capped_true": 13.63,
+    "rmse_vs_uncapped_true": 15.07,
+    "nasa_score_vs_capped_true": 290.6,
+    "nasa_score_vs_uncapped_true": 329.6,
+    "band_coverage_vs_capped_true": 0.88,
+    "mean_band_width_cycles": 36.8
+  },
+  "replay_engines_all_cycles": {
+    "n_engines": 20,
+    "n_rows": 3661,
+    "rmse_vs_capped_true": 14.25,
+    "band_coverage_vs_capped_true": 0.847,
+    "mean_band_width_cycles": 37.6,
+    "coverage_by_range": {
+      "0-15": {
+        "n": 300,
+        "coverage": 0.917
+      },
+      "15-30": {
+        "n": 279,
+        "coverage": 0.982
+      },
+      "30-50": {
+        "n": 372,
+        "coverage": 0.788
+      },
+      "50-75": {
+        "n": 414,
+        "coverage": 0.775
+      },
+      "75-100": {
+        "n": 601,
+        "coverage": 0.877
+      },
+      "100+": {
+        "n": 1695,
+        "coverage": 0.832
+      }
+    }
+  },
+  "raw_mc_dropout_band": {
+    "description": "Gaussian 80% band from the MC-dropout spread alone (mean +/- 1.28 x spread), before calibration",
+    "oof_coverage": 0.657,
+    "replay_coverage": 0.701,
+    "replay_mean_width_cycles": 29.6,
+    "replay_coverage_by_range": {
+      "0-15": {
+        "n": 300,
+        "coverage": 0.937
+      },
+      "15-30": {
+        "n": 279,
+        "coverage": 0.778
+      },
+      "30-50": {
+        "n": 372,
+        "coverage": 0.489
+      },
+      "50-75": {
+        "n": 414,
+        "coverage": 0.452
+      },
+      "75-100": {
+        "n": 601,
+        "coverage": 0.443
+      },
+      "100+": {
+        "n": 1695,
+        "coverage": 0.845
+      }
+    }
+  },
+  "cross_validation": {
+    "folds": 5,
+    "oof_rmse_vs_capped_true": 14.48,
+    "oof_rmse_deterministic": 14.11,
+    "fold_details": [
+      {
+        "fold": 0,
+        "holdout_engines": 16,
+        "best_epoch": 14,
+        "holdout_rmse": 15.65,
+        "epochs_run": 24,
+        "seconds": 88.7
+      },
+      {
+        "fold": 1,
+        "holdout_engines": 16,
+        "best_epoch": 12,
+        "holdout_rmse": 12.84,
+        "epochs_run": 22,
+        "seconds": 34.0
+      },
+      {
+        "fold": 2,
+        "holdout_engines": 16,
+        "best_epoch": 19,
+        "holdout_rmse": 15.72,
+        "epochs_run": 29,
+        "seconds": 28.7
+      },
+      {
+        "fold": 3,
+        "holdout_engines": 16,
+        "best_epoch": 44,
+        "holdout_rmse": 12.34,
+        "epochs_run": 54,
+        "seconds": 80.7
+      },
+      {
+        "fold": 4,
+        "holdout_engines": 16,
+        "best_epoch": 19,
+        "holdout_rmse": 13.67,
+        "epochs_run": 29,
+        "seconds": 33.0
+      }
+    ]
+  },
+  "sensor_importance": {
+    "s2": 0.073,
+    "s3": 0.0529,
+    "s4": 0.0859,
+    "s7": 0.056,
+    "s8": 0.1104,
+    "s9": 0.0564,
+    "s11": 0.0831,
+    "s12": 0.0768,
+    "s13": 0.0889,
+    "s14": 0.1043,
+    "s15": 0.0592,
+    "s17": 0.0575,
+    "s20": 0.042,
+    "s21": 0.0537
+  },
+  "training": {
+    "window_cycles": 30,
+    "hidden_units": 64,
+    "dense_units": 32,
+    "dropout": 0.25,
+    "batch": 256,
+    "learning_rate": 0.001,
+    "max_epochs": 60,
+    "patience": 10,
+    "mc_passes_per_model": 25,
+    "torch": "2.14.1+cu130",
+    "total_seconds": 365.6
+  },
+  "replay_units": [
+    8,
+    9,
+    13,
+    18,
+    37,
+    46,
+    48,
+    50,
+    55,
+    62,
+    64,
+    69,
+    72,
+    74,
+    76,
+    84,
+    85,
+    87,
+    90,
+    95
+  ]
+}

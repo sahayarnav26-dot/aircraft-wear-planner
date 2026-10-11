@@ -1,0 +1,3 @@
+mode,kg_co2e_per_tonne_km,source_url
+air,0.602,https://example.com/emissions
+road,0.137,https://example.com/emissions
