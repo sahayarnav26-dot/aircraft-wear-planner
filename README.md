@@ -8,7 +8,7 @@ A person approves every decision.
 Theme: AI for Resilient and Sustainable Supply Chains · Round 2 submission
 
 
-
+📄 **[Download / View Final Submission (PDF)](Round2_Submission.pdf)**
 
 | Live Prototype URL | https://aircraft-wear-planner-hazf9ezmfmgncbjkdemhhv.streamlit.app/ |
 
