@@ -144,9 +144,9 @@ config.yaml                 thresholds, buffer, weights, simulation start
 
 | Role | Name |
 | --- | --- |
-| ML lead | _add name_ |
-| Systems and prototype lead | _add name_ |
-| Research, content and demo lead | _add name_ |
+| ML lead | Soham & Arnav |
+| Systems and prototype lead | Arnav |
+| Research, content and demo lead | Aadhya |
 
 ## AI usage declaration
 
